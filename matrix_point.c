@@ -3,7 +3,7 @@
 int main()
 {
     int** a;
-    int column = 5;
+    int column = 10;
     int row = 5;
     
     // 二维矩阵的指针定义
@@ -13,8 +13,8 @@ int main()
         a[i] = (int*)malloc(sizeof(int)*column);
     } 
 
-    for(int i = 0;i < 5;i++){
-        for(int k = 0;k < 5;k++){
+    for(int i = 0;i < row;i++){
+        for(int k = 0;k < column;k++){
             a[i][k] = (i+1)*(k+1);
             printf("%d ",a[i][k]);
         }
